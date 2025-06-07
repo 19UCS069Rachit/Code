@@ -1,0 +1,13 @@
+# based on instruction and argument
+
+FROM Ubuntu
+
+RUN
+RUN
+# COPY 
+
+# ENTRYPOINT
+
+
+# after building the docker file use --- [ docker build -t webapp-color . ]
+

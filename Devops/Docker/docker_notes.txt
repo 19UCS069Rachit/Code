@@ -1,0 +1,31 @@
+kubernetes 
+
+docker run -d --name=redis redis
+
+---- can download image with required image
+docker run ubuntu:<specific version>
+
+docker run -it --> interactive session
+
+docker run -p --> configuring port
+
+
+docker inspect container name -- for more details
+
+
+docker logs <container>
+
+environment variable -- docker run -e <variable_name>
+
+
+# pass the command in the docker run command
+docker run <image name> <command>
+
+# Docker compose
+https://docs.docker.com/compose/
+
+https://docs.docker.com/engine/reference/commandline/compose/
+
+https://github.com/dockersamples/example-voting-app
+
+
