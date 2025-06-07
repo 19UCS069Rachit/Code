@@ -1,0 +1,21 @@
+---
+# Playbook to execute the date command
+- name: Run the date command and display the output
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: Get the current date and time
+      command: date
+      register: date_output
+
+    - name: Display the date and time
+      debug:
+        msg: "The current date and time is: {{ date_output.stdout }}"
+
+    - name: Get the contents of /etc/resolv.conf
+      command: cat /etc/resolv.conf
+      register: resolv_conf_output
+
+    - name: Display the contents of /etc/resolv.conf
+      debug:
+        msg: "The contents of /etc/resolv.conf are:\n{{ resolv_conf_output.stdout }}"

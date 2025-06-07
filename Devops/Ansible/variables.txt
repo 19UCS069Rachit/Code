@@ -1,0 +1,34 @@
+inventory
+    ansible_host  ansible_connection ansible_ssh_pass
+
+playbook.yaml
+-
+    name:
+    hosts:
+    vars:
+        key: value
+    tasks:
+
+define variable in separate file Also
+
+for using any varibale in yaml file use
+{{ varibale_name }}
+
+# dictionary variable
+
+user:
+    name: admin
+    password: Pass123
+
+for accessing such variable 
+        {{ user.name }}  {{ user.password }}
+
+
+Loops:
+
+    with_items can be used for iterating elements
+
+#modules
+
+command modules
+executes the command on remote node
