@@ -1,7 +1,0 @@
-files
-
-main file
-it can take multiple tasks  
-
-
-inventory - server details ip and passwords 
